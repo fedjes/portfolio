@@ -31,7 +31,7 @@ const StyledMain = styled.section`
 `
 
 const TextContentMain = styled.div`
-
+  max-width: 450px;
 `
 
 const StyledTitleMain = styled.h1`

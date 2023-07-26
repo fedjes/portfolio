@@ -9,13 +9,13 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>Skills</SectionTitle>
-            <FlexWrapper >
+            <FlexWrapper justify={"space-around"}>
                 <Skill iconId={'code'} skillTitle={'html'}/>
                 <Skill iconId={'ts'} skillTitle={'typescript'}/>
                 <Skill iconId={'react'} skillTitle={'react'}/>
                 <Skill iconId={'css'} skillTitle={'css'}/>
                 <Skill iconId={'figma'} skillTitle={'figma'}/>
-                <Skill iconId={'stCom'} skillTitle={'styledComp'}/>
+                <Skill iconId={'stCom'} skillTitle={'styledComponents'}/>
             </FlexWrapper>
         </StyledSkills>
     )
