@@ -1,26 +1,43 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Icon} from "../../../components/icon/Icon";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
+import {Container} from "../../../components/Container";
+
+
 
 export const Skills = () => {
     return (
-        <StyledSkills>
-            <SectionTitle>Skills</SectionTitle>
-            <FlexWrapper justify={"space-around"}>
-                <Skill iconId={'code'} skillTitle={'html'}/>
-                <Skill iconId={'ts'} skillTitle={'typescript'}/>
-                <Skill iconId={'react'} skillTitle={'react'}/>
-                <Skill iconId={'css'} skillTitle={'css'}/>
-                <Skill iconId={'figma'} skillTitle={'figma'}/>
-                <Skill iconId={'stCom'} skillTitle={'styledComponents'}/>
-            </FlexWrapper>
-        </StyledSkills>
-    )
+        <StyledSkillsS>
+            <Container>
+                <SectionTitle>Skills</SectionTitle>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                    <Skill iconId={"code"}
+                           title={"html5"}
+                           content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+                    <Skill iconId={"css"}
+                           title={"css3"}
+                           content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+                    <Skill iconId={"figma"}
+                           title={"figma"}
+                           content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+                    <Skill iconId={"react"}
+                           title={"react"}
+                           content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+                    <Skill iconId={"stCom"}
+                           title={"styled component"}
+                           content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+                    <Skill iconId={"ts"}
+                           title={"type script"}
+                           content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+                </FlexWrapper>
+            </Container>
+        </StyledSkillsS>
+    );
 };
 
-const StyledSkills = styled.section`
-  min-height: 30vh;
+const StyledSkillsS = styled.section`
+  
 `
+

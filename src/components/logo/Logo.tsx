@@ -1,16 +1,11 @@
 import React from 'react';
-import styled from "styled-components";
+import {Icon} from "../icon/Icon";
 
-
-export  const Logo = () => {
+export const Logo = () => {
     return (
-        <StyledLogo href="">
-            Home
-        </StyledLogo>
+        <a href="">
+            <Icon iconId={'react'}/>
+        </a>
     );
 };
 
-const StyledLogo = styled.a`
-  display: block;
-  align-self: center;
-`
