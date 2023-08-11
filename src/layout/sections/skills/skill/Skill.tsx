@@ -1,7 +1,8 @@
 import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
-import styled from "styled-components";
+import { S } from './../Skills_Styles';
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+
 
 type SkillPropsType = {
     iconId: string
@@ -9,48 +10,53 @@ type SkillPropsType = {
     content: string
 }
 
-export const Skill = (props: SkillPropsType) => {
+export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
     return (
-        <OneSkill>
+        <S.OneSkill>
             <FlexWrapper direction={"column"} align={"center"}>
-                <IconWrapper>
+                <S.IconWrapper>
                     <Icon iconId={props.iconId}/>
-                </IconWrapper>
-                <SkillTitle>{props.title}</SkillTitle>
-                <SkillTextContent>{props.content}</SkillTextContent>
+                </S.IconWrapper>
+                <S.SkillTitle>{props.title}</S.SkillTitle>
+                <S.SkillTextContent>{props.content}</S.SkillTextContent>
             </FlexWrapper>
-        </OneSkill>
+        </S.OneSkill>
     );
 };
 
-const OneSkill = styled.div`
-    width: 380px;
-    padding: 62px 20px 40px;
-    `
-const SkillTitle = styled.h3`
-    margin: 70px 0 15px;
-    text-transform: uppercase;
-    `
-const SkillTextContent = styled.p`
-  text-align: center;
-  
-`
+// const OneSkill = styled.div`
+//     width: 330px;
+//     flex-grow: 1;
+//     padding: 62px 20px 40px;
 
-export const IconWrapper = styled.div`
-  position: relative;
+//     @media ${theme.media.mobile} {
+//         padding: 62px 0px 40px;
+//     }
+//     `
+// const SkillTitle = styled.h3`
+//     margin: 70px 0 15px;
+//     text-transform: uppercase;
+//     `
+// const SkillTextContent = styled.p`
+//   text-align: center;
   
-  &::before {
-    content: "";
-    display: inline-block;
+// `
 
-    width: 80px;
-    height: 80px;
-    transform: rotate(45deg) translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.10);
+// export const IconWrapper = styled.div`
+//   position: relative;
+  
+//   &::before {
+//     content: "";
+//     display: inline-block;
+
+//     width: 80px;
+//     height: 80px;
+//     transform: rotate(45deg) translate(-50%, -50%);
+//     background-color: rgba(255, 255, 255, 0.10);
     
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform-origin: top left;
-  }
-`
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform-origin: top left;
+//   }
+// `
