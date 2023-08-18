@@ -41,7 +41,7 @@ const skillData = [
 
 export const Skills: React.FC = () => {
     return (
-        <StyledSkillsS>
+        <StyledSkillsS id={'skills'}>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>

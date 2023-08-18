@@ -24,7 +24,10 @@ const MainTextContent = styled.div`
     `
 
 const MainTitle = styled.h1`
-  ${font({weight: 400, fMax: 27, fMin:20})}
+  ${font({weight: 400, fMax: 27, fMin:20})};
+  p {
+    display: none;
+  }
 `
 
 const NameMain = styled.h2`

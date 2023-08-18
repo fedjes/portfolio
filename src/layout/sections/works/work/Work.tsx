@@ -24,8 +24,8 @@ export const Work: React.FC<WorkPropsType> = (props:WorkPropsType) => {
             <S.DescriptionWrapper>
                 <S.TitleWork>{props.title}</S.TitleWork>
                 <S.DescriptionWork>{props.text}</S.DescriptionWork>
-                <TabLink href={""}>demo</TabLink>
-                <TabLink href={""}>work</TabLink>
+                <TabLink active href={"#"}>demo</TabLink>
+                <TabLink href={"#"}>work</TabLink>
             </S.DescriptionWrapper>
         </S.Work>
     );
